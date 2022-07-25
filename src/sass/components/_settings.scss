@@ -1,0 +1,242 @@
+//@media only screen and (min-width: 901px) {
+.settings-bigbox {
+  margin-right: 2%;
+  margin-top: 2%;
+
+  margin-left: 2%;
+  border-radius: 11px;
+  width: 96%;
+
+  &__header {
+    size: 1rem;
+  }
+
+  &__body {
+    background-color: #e4e4e4;
+    border-radius: 11px;
+    height: 55rem;
+
+    &--signout {
+      border: 2px solid red;
+      width: 35%;
+      margin-left: 44%;
+      // margin-top: 0rem;
+      // margin-bottom: 10px;
+      border-radius: 5px;
+
+      &--button {
+        background: none;
+        color: red;
+        border: none;
+        padding: 0;
+        margin-left: 40%;
+        height: fit-content;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        outline: inherit;
+        margin-top: 2px;
+      }
+    }
+
+    &--passswordLabel {
+      margin-bottom: 0.1rem;
+      margin-top: 3rem;
+      color: darkblue;
+      margin-left: 3rem;
+    }
+
+    &--newBox {
+      background-color: darkblue;
+      margin-left: 3rem;
+      width: 30%;
+      position: absolute;
+      height: 2.7rem;
+      border-radius: 5px;
+
+      &--button {
+        background: none;
+        color: white;
+        border: none;
+        padding: 0;
+        margin-top: 2px;
+        margin-left: 8px;
+        text-align: center;
+        height: fit-content;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        outline: inherit;
+      }
+    }
+
+    &--stuff {
+      display: inline-block;
+
+      &--image {
+        width: 15rem;
+        margin-left: 3rem;
+        margin-top: 4rem;
+      }
+
+      &--name {
+        margin-left: 5rem;
+        font-size: xx-large;
+        position: absolute;
+        margin-top: 9.5rem;
+        display: inline-block;
+      }
+    }
+
+    &--label {
+      color: darkblue;
+      margin-bottom: -1rem;
+      margin-top: 3rem;
+      font-size: 20px;
+      margin-left: 3rem;
+    }
+
+    &--box {
+      background-color: lightgray;
+      margin-left: 3rem;
+      width: 77.4%;
+      height: 30px;
+      min-width: 320px;
+      border-radius: 3px;
+
+      &--label {
+        font-size: large;
+        width: fit-content;
+        text-align: start;
+        // margin-top: 1rem;
+        margin: 5px;
+        margin-left: 8px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+// }
+
+@include respond(phone) {
+  .settings-bigbox {
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border-radius: 11px;
+    height: 100%;
+    width: 98%;
+
+    &__header {
+      font-size: x-large;
+    }
+
+    &__body {
+      background-color: #e4e4e4;
+      border-radius: 11px;
+      height: 55rem;
+
+      &--inline {
+        margin-left: -1rem;
+      }
+      // change to percent margin
+      &--signout {
+        border: 2px solid red;
+        min-width: 325px;
+        margin-top: 7rem;
+        margin-left: 2rem;
+        border-radius: 5px;
+        margin-right: 1rem;
+        width: 32.5%;
+        margin-bottom: 3rem;
+
+        &--button {
+          background: none;
+          color: red;
+          border: none;
+          padding: 0;
+          height: fit-content;
+          font-size: large;
+          font-weight: bold;
+          cursor: pointer;
+          outline: inherit;
+        }
+      }
+
+      &--passswordLabel {
+        margin-bottom: 0.1rem;
+        margin-top: 3rem;
+        color: darkblue;
+        margin-left: 2rem;
+      }
+
+      &--newBox {
+        background-color: darkblue;
+        margin-left: 2rem;
+        margin-right: 3rem;
+        width: 40%;
+        min-width: 325px;
+        height: 30px;
+        border-radius: 5px;
+        justify-content: center;
+
+        &--button {
+          background: none;
+          color: white;
+          border: none;
+          padding: 0;
+          text-align: center;
+          height: fit-content;
+          font-size: large;
+          font-weight: bold;
+          cursor: pointer;
+          outline: inherit;
+        }
+      }
+
+      &--stuff {
+        &--image {
+          width: 15rem;
+          margin-left: 2rem;
+          margin-top: 4rem;
+        }
+
+        &--name {
+          margin-left: 0.5rem;
+          font-size: x-large;
+          // align-items: center;
+          margin-top: 8rem;
+        }
+      }
+
+      &--label {
+        color: darkblue;
+        margin-left: 5.5%;
+        position: relative;
+        font-size: medium;
+        display: inline-block;
+      }
+
+      &--box {
+        background-color: lightgrey;
+        height: 30px;
+        width: 85%;
+        margin-left: 5.5%;
+        border-radius: 3px;
+
+        &--label {
+          border-radius: 2px;
+          font-size: medium;
+          padding-top: .5%;
+          width: fit-content;
+          text-align: start;
+          text-indent: .5rem;
+          margin-top: 0rem;
+          margin-left: 2%;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

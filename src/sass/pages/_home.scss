@@ -1,0 +1,17 @@
+.home {
+  margin: 0 2%;
+  margin-top: 2.5rem;
+  font-family: Poppins;
+
+  &__time {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
+    display: inline;
+    text-align: right;
+
+    h2 {
+      margin-right: 100px;
+    }
+  }
+}

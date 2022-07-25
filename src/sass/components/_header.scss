@@ -1,0 +1,47 @@
+.header {
+  background-color: var(--primary-color);
+  color: var(--header-font-color);
+
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 7rem;
+      width: auto;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-right: 2.2rem;
+
+    &--text {
+      text-align: right;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: white;
+
+      @media only screen and (max-width: 600px) {
+        visibility: hidden;
+      }
+    }
+
+    &--profile {
+      img {
+        margin-left: 1rem;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border: 0.3rem solid var(--header-font-color);
+        object-fit: cover;
+      }
+    }
+  }
+}
